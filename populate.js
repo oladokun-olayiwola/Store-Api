@@ -9,7 +9,7 @@ const  start = async () => {
  try {
     await connectDB(process.env.MONGO_URI)
     await Products.deleteMany()
-    await Products.create(jsonProducts)
+    await Products.(jsonProducts)
     console.log('Success');
     process.exit(0);
  } catch (error) {
